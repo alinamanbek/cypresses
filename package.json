@@ -1,0 +1,17 @@
+{
+  "name": "api-e2e",
+  "version": "1.0.0",
+  "description": "test api",
+  "main": "index.js",
+  "author": "Alina",
+  "license": "ISC",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
+}
