@@ -11,6 +11,9 @@ export class Notification {
   openNotificationTypeDropdown() {return cy.get('.mat-select').click();}
   // Select the 'SMS' option from the dropdown
   selectSMSOption() { return cy.get('.mat-option').contains('SMS').click();}
+  // 
+
+
 
   doNotification() {
     this.clickNotification();
@@ -22,7 +25,7 @@ export class Notification {
     this.isNewMessageVisible();
   
     // Type into the input field for the message subject
-    cy.get('.push-modal-add-title input').type('Alina');
+    cy.get('.push-modal-add-title input').type('last');
     cy.wait(1000);
   
     // Check if the 'Текс сообщения' heading is visible
@@ -30,7 +33,7 @@ export class Notification {
     cy.wait(1000);
   
     // Type into the input field for the message body
-    cy.get('.push-modal-preview__text').eq(1).type('Alina');
+    cy.get('.push-modal-preview__text').eq(1).type('last');
     cy.wait(1000);
      // Select the 'SMS' option from the dropdown 
     this.openNotificationTypeDropdown();
