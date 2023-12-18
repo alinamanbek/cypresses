@@ -19,6 +19,7 @@ describe('add notification', () => {
   
     //search
     searchPage.doSearch('Salima');
+    //end
 
 
   });
