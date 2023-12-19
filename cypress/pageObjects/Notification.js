@@ -25,7 +25,7 @@ export class Notification {
     this.isNewMessageVisible();
   
     // Type into the input field for the message subject
-    cy.get('.push-modal-add-title input').type('last');
+    cy.get('.push-modal-add-title input').type('last_one');
     cy.wait(1000);
   
     // Check if the 'Текс сообщения' heading is visible
@@ -33,7 +33,7 @@ export class Notification {
     cy.wait(1000);
   
     // Type into the input field for the message body
-    cy.get('.push-modal-preview__text').eq(1).type('last');
+    cy.get('.push-modal-preview__text').eq(1).type('last_one');
     cy.wait(1000);
      // Select the 'SMS' option from the dropdown 
     this.openNotificationTypeDropdown();

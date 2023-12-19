@@ -12,6 +12,8 @@ describe('add notification', () => {
     //login
     loginPage.doLogin();
     cy.url().should('include', 'clients');
+    
+
     //add notification
     notification.doNotification();
     //send notification
